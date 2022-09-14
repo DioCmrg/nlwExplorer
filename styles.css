@@ -141,6 +141,8 @@ main section:nth-child(3) {
     }
 }
 
+/* aniamcao bugou? */
+
 @keyframes fromBottom {
     from {
         opacity: 0;
