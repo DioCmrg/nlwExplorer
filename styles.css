@@ -22,8 +22,8 @@ body * {
 }
 
 header {
-    margin-top: 32px;
-    text-align: center;
+    padding-top: 32px;
+    height: calc(120px + 32px);
 }
 
 header div {
@@ -109,12 +109,18 @@ section ul li:hover {
 
 /* animation */
 
+header div {
+    animation: fromTop .7s .3s backwards;
+}
+
 @keyframes fromTop {
     from {
+        opacity: 0;
         transform: translateY(-30px);
     }
 
     to {
+        opacity: 1;
         transform: translateY(0);
     }
 }
